@@ -17,4 +17,14 @@
 	//use strict;
 	// 有好多变量 我先不一一定义 用到的时候再研究吧
 	//
+	var
+
+	// 定义一个我的 MyjQuery
+	MyjQuery = function( selector, context){
+		alert("Hello MyjQuery");
+		return false;
+	}
+
+	// 挂载在window下
+	window.MyjQuery = MyjQuery;
 })(window);
